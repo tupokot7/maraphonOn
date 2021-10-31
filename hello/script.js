@@ -3,6 +3,7 @@ let op = prompt("Введите одно из: '+' '-' '*' '/'");
 let b = prompt("Введите второе число:");
 let result;
 
+   // ----- т.к. до switch не дошли - делаю по ТЗ по пройденным темам :) -----
 function result() {
    if (op === "+") {
       result = a + b;
