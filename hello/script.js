@@ -1,20 +1,21 @@
-let a = +prompt("Введите первое число: ");
-let op = prompt("Введите одно из: +, -, * или /");
-let b = +prompt("Введите второе число: ");
+let numberOne = +prompt("Введите первое число: ");
+let operation = prompt("Введите одно из: +, -, * или /");
+let numberTwo = +prompt("Введите второе число: ");
 let result;
 
    // ----- т.к. до switch не дошли - делаю по ТЗ по пройденным темам :) -----
 function calc() {
-   if (op === "+") {
-      result = a + b;
-   } else if(op === "-") {
-      result = a - b;
-   } else if (op === "*") {
-      result = a * b;
-   } else if (op === "/") {
-      result = a / b;
-   } else if (op != "+","-","*","/") {
+   if (operation === "+") {
+      result = numberOne + numberTwo;
+   } else if(operation === "-") {
+      result = numberOne - numberTwo;
+   } else if (operation === "*") {
+      result = numberOne * numberTwo;
+   } else if (operation === "/") {
+      result = numberOne / numberTwo;
+   } else if (operation != "+","-","*","/") {
       alert("Error: unknown operation");
+      return;
    }
    alert("Результат: " + result);
 }
